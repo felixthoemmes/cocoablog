@@ -33,30 +33,16 @@ A current CV can be downloaded here.</description>
     </item>
     
     <item>
-      <title></title>
-      <link>/about-this-site/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Publications</title>
+      <link>/publications/publications/</link>
+      <pubDate>Sat, 22 Aug 2015 06:42:21 -0700</pubDate>
       
-      <guid>/about-this-site/</guid>
-      <description>    </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/posts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/</guid>
-      <description>    </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/writing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/writing/</guid>
-      <description>    </description>
+      <guid>/publications/publications/</guid>
+      <description>Peer-reviewed publications ###2017
+Thoemmes, F., Rosseel, Y., &amp;amp; Textor, J. (in press). Local Testing of Structural Equation Models. Psychological Methods.
+###2016
+Coman, E., Thoemmes, F., &amp;amp; Fifield, J. Commentary: Muthèn, B., &amp;amp; Asparouhov, T. (2016). Causal effects in mediation modeling: An introduction with applications to latent variables. Structural Equation Modeling: A Multidisciplinary Journal, 22(1), 12-23. (in press). Frontiers in Psychology, Section Quantitative Psychology and Measurement.
+Thoemmes, F., Liao, W., &amp;amp; Jin, Z.</description>
     </item>
     
   </channel>

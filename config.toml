@@ -24,8 +24,33 @@ identifier             = "blog"
 url                    = "/blog/"
 
 [[menu.main]]
-name                   = "About"
+name                   = "Publications"
 weight                 = -110
+identifier             = "Publications"
+url                    = "/publications/"
+
+[[menu.main]]
+name                   = "Teaching"
+weight                 = -100
+identifier             = "Teaching"
+url                    = "/teaching/"
+
+[[menu.main]]
+name                   = "Open Science"
+weight                 = -90
+identifier             = "Open Science"
+url                    = "/open/"
+
+[[menu.main]]
+name                   = "Projects"
+weight                 = -80
+identifier             = "Projects"
+url                    = "/projects/"
+
+
+[[menu.main]]
+name                   = "About"
+weight                 = -70
 identifier             = "about"
 url                    = "/about/"
 
@@ -33,9 +58,6 @@ url                    = "/about/"
 latestpostscount       = 5                             # how many posts to display on the home page
 i18n_flags             = false                         # whether to display small country flags for available translations
 author                 = "Felix Thoemmes"
-role                   = "Assistant Professor"
-organization           = "Cornell University"
-organization_url       = "cornell.edu"
 cachebuster            = true                          
 dateform               = "Jan 2, 2006"
 dateformfull           = "Mon Jan 2 2006 15:04:05 MST"
@@ -44,10 +66,9 @@ email                  = "felix.thoemmes@cornell.edu"
 extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
 github                 = "//github.com/felixthoemmes"
 highlightjs            = true
+highlightjslanguages   = ["R","go"]                        # additional languages not included in the "common" set
 lang                   = "en"
 noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
 selfintro              = ""                            # appears in the site header when set to a non-empty string
 twitter                = "//twitter.com/felixthoemmes"
-highlightjslanguages   = ["R","go"]                        # additional languages not included in the "common" set
 avatar                 = "img/profile.jpg" #do not use in the same time as gravatar
-# gravatar             = ""                # do not use in the same time as avatar
