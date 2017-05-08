@@ -26,25 +26,25 @@ url                    = "/blog/"
 [[menu.main]]
 name                   = "Publications"
 weight                 = -110
-identifier             = "Publications"
+identifier             = "publications"
 url                    = "/publications/"
 
 [[menu.main]]
 name                   = "Teaching"
 weight                 = -100
-identifier             = "Teaching"
+identifier             = "teaching"
 url                    = "/teaching/"
 
 [[menu.main]]
 name                   = "Open Science"
 weight                 = -90
-identifier             = "Open Science"
+identifier             = "open"
 url                    = "/open/"
 
 [[menu.main]]
 name                   = "Projects"
 weight                 = -80
-identifier             = "Projects"
+identifier             = "projects"
 url                    = "/projects/"
 
 
