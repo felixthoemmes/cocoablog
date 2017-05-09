@@ -20,42 +20,42 @@ blog  = "blog/:slug/"
 [[menu.main]]
 name                   = "Blog"
 weight                 = -120
-identifier             = "blog"
+identifier             = "Blog"
 url                    = "/blog/"
 
 [[menu.main]]
 name                   = "Publications"
 weight                 = -110
-identifier             = "publications"
+identifier             = "Publications"
 url                    = "/publications/"
 
 [[menu.main]]
 name                   = "Teaching"
 weight                 = -100
-identifier             = "teaching"
+identifier             = "Teaching"
 url                    = "/teaching/"
 
 [[menu.main]]
 name                   = "Open Science"
 weight                 = -90
-identifier             = "open"
-url                    = "/open/"
+identifier             = "Open science"
+url                    = "/open science/"
 
 [[menu.main]]
 name                   = "Projects"
 weight                 = -80
-identifier             = "projects"
+identifier             = "Projects"
 url                    = "/projects/"
 
 
 [[menu.main]]
 name                   = "About"
 weight                 = -70
-identifier             = "about"
+identifier             = "About"
 url                    = "/about/"
 
 [params]
-latestpostscount       = 5                             # how many posts to display on the home page
+latestpostscount       = 10                            # how many posts to display on the home page
 i18n_flags             = false                         # whether to display small country flags for available translations
 author                 = "Felix Thoemmes"
 cachebuster            = true                          
@@ -66,9 +66,9 @@ email                  = "felix.thoemmes@cornell.edu"
 extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
 github                 = "//github.com/felixthoemmes"
 highlightjs            = true
-highlightjslanguages   = ["R","go"]                        # additional languages not included in the "common" set
+highlightjslanguages   = ["R"]                        # additional languages not included in the "common" set
 lang                   = "en"
-noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
+noshowreadtime         = true                         # if true, don't show "<x> minutes read" in posts
 selfintro              = ""                            # appears in the site header when set to a non-empty string
 twitter                = "//twitter.com/felixthoemmes"
 avatar                 = "img/profile.jpg" #do not use in the same time as gravatar
