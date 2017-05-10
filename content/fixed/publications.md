@@ -5,8 +5,8 @@ title = "Publications"
 
 +++
 
-Peer-reviewed publications
---------------------------
+Peer-reviewed
+-------------
 
 ### 2017
 **Thoemmes, F.**, Rosseel, Y., & Textor, J. (in press). Local Testing of Structural Equation Models. *Psychological Methods.*
@@ -96,9 +96,9 @@ Conway, L. G., III., **Thoemmes, F.**, Allison, A. M., Hands Towgood, K., Wagner
 
 
 
-Other publications
-------------------
-------------------
+Other
+-----
+
 
 ### 2015
 West, S. G., Cham, H., & **Thoemmes, F.** (2015). Propensity score analysis. In R. L. Cautin & S. O. Lilienfeld (Eds.), *Encyclopedia of clinical psychology.* New York, NY: Wiley.

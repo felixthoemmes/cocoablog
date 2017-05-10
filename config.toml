@@ -19,38 +19,38 @@ blog  = "blog/:slug/"
 
 [[menu.main]]
 name                   = "Blog"
-weight                 = -120
+weight                 = -60
 identifier             = "Blog"
 url                    = "/blog/"
 
 [[menu.main]]
 name                   = "Publications"
-weight                 = -110
+weight                 = -50
 identifier             = "Publications"
 url                    = "/publications/"
 
 [[menu.main]]
 name                   = "Teaching"
-weight                 = -100
+weight                 = -40
 identifier             = "Teaching"
 url                    = "/teaching/"
 
 [[menu.main]]
 name                   = "Open Science"
-weight                 = -90
+weight                 = -30
 identifier             = "Open science"
 url                    = "/open science/"
 
 [[menu.main]]
 name                   = "Projects"
-weight                 = -80
+weight                 = -20
 identifier             = "Projects"
 url                    = "/projects/"
 
 
 [[menu.main]]
-name                   = "About"
-weight                 = -70
+name                   = "About (CV)"
+weight                 = -10
 identifier             = "About"
 url                    = "/about/"
 

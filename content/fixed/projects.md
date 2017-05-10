@@ -5,5 +5,7 @@ title = "Projects"
 
 +++
 
+In this section I provide short narratives and information about past, and ongoing research projects. 
+
 ### 2017
-**Thoemmes, F.**, Rosseel, Y., & Textor, J. (in press). Local Testing of Structural Equation Models. *Psychological Methods.*
+
