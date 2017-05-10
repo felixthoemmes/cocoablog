@@ -12,5 +12,5 @@ I am also a signatory of the [Peer Reviewers' Openness Initiative](http://www.op
 
 {{< figure src="/img/pro_lock.png" link="https://opennessinitiative.org">}}
 
-In order to provide raw data and computer code, I am currently using [OSF](osf.io) and [GitHub](https://github.com/felixthoemmes). I started in late 2016 to do this for all of my papers, but there is some backlog for older papers. I will try to upload data and code for older papers, but if you urgently require some older files, feel free to email me. I can typically retrieve anything that was written after 2012 pretty quickly. For even older papers, it might take a little longer, but I will try my best. 
+In order to provide raw data and computer code, I am currently using [OSF](https://osf.io/nfb8u/) and [GitHub](https://github.com/felixthoemmes). I started in late 2016 to do this for all of my papers, but there is some backlog for older papers. I will try to upload data and code for older papers, but if you urgently require some older files, feel free to email me. I can typically retrieve anything that was written after 2012 pretty quickly. For even older papers, it might take a little longer, but I will try my best. 
 
