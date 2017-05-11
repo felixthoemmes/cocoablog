@@ -55,6 +55,7 @@ identifier             = "About"
 url                    = "/about/"
 
 [params]
+favicon                = "favicon.ico"
 latestpostscount       = 10                            # how many posts to display on the home page
 i18n_flags             = false                         # whether to display small country flags for available translations
 author                 = "Felix Thoemmes"
