@@ -9,7 +9,7 @@ publishdir          = "public"
 author              = "Felix Thoemmes"
 title               = "Felix Thoemmes"
 pygmentsuseclasses  = true
-disqusShortname     = "https-felixthoemmes-github-io-blog"
+disqusShortname     = "felix_thoemmes"
 pluralizelisttitles = false
 googleAnalytics     = ""
 
