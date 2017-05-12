@@ -9,7 +9,7 @@ publishdir          = "public"
 author              = "Felix Thoemmes"
 title               = "Felix Thoemmes"
 pygmentsuseclasses  = true
-disqusShortname     = "felix_thoemmes"
+disqusShortname     = "felixthoemmesblogdown"
 pluralizelisttitles = false
 googleAnalytics     = ""
 
