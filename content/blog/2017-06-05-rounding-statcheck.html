@@ -1,0 +1,55 @@
+---
+title: Rounding in the age of statcheck
+author: Felix Thoemmes
+date: '2017-06-05'
+slug: ''
+categories: [statistics]
+tags: [statistics]
+---
+
+<!-- BLOGDOWN-HEAD -->
+<!-- /BLOGDOWN-HEAD -->
+
+<!-- BLOGDOWN-BODY-BEFORE -->
+<!-- /BLOGDOWN-BODY-BEFORE -->
+<p>I recently chatted with a colleague whose work was flagged on PubPeer by the statcheck bot that has been scraping the web last year or so. Her reaction - which I believe is pretty typical - was mild annoyance. To her (and I believe many others) it felt a bit pedantic to be flagged what was essentially a rounding error. She feared that such a flag may create a false impression that the work is a “false positive”, and that people jump to conclusions when they see a statcheck error.</p>
+<p>I won’t be writing about this aspect of statcheck though. My colleague did make one point that I thought was worth some investigation. She mentioned that she rounded both the reported t-value and the p-value, and that statcheck (when recomputing the p-value from the rounded t-value) would therefore make a mistake, and falsely label her results as incorrect. Let’s unpack this a bit…</p>
+<div id="the-potential-problem-of-rounding" class="section level3">
+<h3>The potential problem of rounding</h3>
+<p>Assume you have obtained a t-value of 3.454 (with 15 degrees of freedom). Your computed p-value would be 0.0035 (which rounds to .004). But the t-value itself could be reported in a rounded format in the paper. You could report 3.454 (with three digits), 3.45 (round to two digits), or you could even report 3.5 (round to one digit, unusual, but not unseen). For the last two statcheck would assume that the actual t-value is 3.450, and 3.500 (contrary to the fact that it is 3.454), and compute a p-value from those values. That recomputed p-value would then not match the reported one, and an error would be incorrectly flagged. Here is an example in a table.</p>
+<table>
+<thead>
+<tr class="header">
+<th>t</th>
+<th>p</th>
+<th>rounded t</th>
+<th>rounded p</th>
+<th>statcheck t</th>
+<th>statcheck p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.454</td>
+<td>0.0035</td>
+<td>3.45</td>
+<td>.004</td>
+<td>3.450</td>
+<td>0.004</td>
+</tr>
+<tr class="even">
+<td>3.454</td>
+<td>0.0035</td>
+<td>3.5</td>
+<td>.004</td>
+<td>3.500</td>
+<td>0.003</td>
+</tr>
+</tbody>
+</table>
+<p>Note the second column in which the researcher would correctly report .004, but statcheck would recompute .003, and thus flag an error.</p>
+</div>
+<div id="actually-statcheck-makes-no-such-error" class="section level3">
+<h3>Actually, statcheck makes no such error</h3>
+<p>After my colleague told me this argument, I went ahead and tested this in statcheck… and it turns out it makes no such mistake. I probed it a little bit and then looked at the sourcecode. While it may report the p-value that it obtains from the rounded t-value, and while it is also true that the reported and the recomputed p-value will be different, statcheck will only report an error when the difference between the two p-values is inconsitent with rounding based on the reported digits of the t-value. In other words, statcheck checks the accuracy with which you reported your t-value, and then is smart enough to realize whether you made a rounding error, or whether any discrepancy is due to innocent rounding.</p>
+</div>
