@@ -12,6 +12,7 @@ pygmentsuseclasses  = true
 disqusShortname     = "felixthoemmesblogdown"
 pluralizelisttitles = false
 googleAnalytics     = "UA-99017619-1"
+math                = true
 
 [permalinks]
 fixed = ":title/"
@@ -59,7 +60,8 @@ favicon                = "favicon.ico"
 latestpostscount       = 10                            # how many posts to display on the home page
 i18n_flags             = false                         # whether to display small country flags for available translations
 author                 = "Felix Thoemmes"
-cachebuster            = true                          
+cachebuster            = true  
+math                   = true
 dateform               = "Jan 2, 2006"
 dateformfull           = "Mon Jan 2 2006 15:04:05 MST"
 description            = ""
