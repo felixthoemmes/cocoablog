@@ -8,11 +8,8 @@ tags: statistics
 categories: statistics
 ---
 
-<!-- BLOGDOWN-HEAD -->
-<!-- /BLOGDOWN-HEAD -->
 
-<!-- BLOGDOWN-BODY-BEFORE -->
-<!-- /BLOGDOWN-BODY-BEFORE -->
+
 <p>I recently chatted with a colleague whose work was flagged on PubPeer by the statcheck bot that has been scraping the web last year or so. Her reaction - which I believe is pretty typical - was mild annoyance. To her (and I believe many others) it felt a bit pedantic to be flagged what was essentially a rounding error. She feared that such a flag may create a false impression that the work is a “false positive”, and that people jump to conclusions when they see a statcheck error.</p>
 <p>I won’t be writing about this aspect of statcheck though. My colleague did make one point that I thought was worth some investigation. She mentioned that she rounded both the reported t-value and the p-value, and that statcheck (when recomputing the p-value from the rounded t-value) would therefore make a mistake, and falsely label her results as incorrect. Let’s unpack this a bit…<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
 <div id="the-potential-problem-of-rounding" class="section level3">
