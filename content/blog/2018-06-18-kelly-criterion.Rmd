@@ -15,7 +15,7 @@ So here is what I did: for each game, I pulled the winning probabilities from fi
 The Kelly criterion is a method to determine how much one should wager on a bet, given assumed winning probabilities, and offered odds. Kelly betting maximizes logarithmic utility. Below is a graphic display showing the Kelly criterion. On the x-axis are the probabilities that you assume an event is going to take place, and on the y-axis are the offered odds (these odds can be translated into implied probabilities of the bookie). The shading for each part of the graph shows what percentage of your current bankroll you should bet. As an example, if you believe the probability of an event to happen is close to 100% (right side of the graph), then you typically end up betting a lot (or all) of your bankroll (the yellow region of the graph). For events in which the implied probabilities of the bookie are larger than your own, you end up not betting at all - notice that this area is quite large in the graph. 
 
 
-```{r, echo=FALSE,warning=FALSE,message=FALSE}
+```{r, echo=FALSE,warning=FALSE,message=FALSE, cache=TRUE}
 library(ggplot2)
 library(viridis)
 library(ggthemes)
@@ -65,7 +65,7 @@ I will update this blog as the world cup progresses.
 
 ```{r, message=FALSE,warning=FALSE, echo=FALSE}
 wcb <- read_xlsx("C:\\Users\\fjt36\\Dropbox\\WORK\\2018 Winter Cornell\\kellybettingwc.xlsx")
-wcb <- wcb %>% mutate(posneg = factor(ifelse(wcb$`Total net`<0,"negative","positive"))) %>%  select(ID,Title,"Total net","Total stake",Bankrollkellyplot,posneg) %>% slice(1:13)
+wcb <- wcb %>% mutate(posneg = factor(ifelse(wcb$`Total net`<0,"negative","positive"))) %>%  select(ID,Title,"Total net","Total stake",Bankrollkellyplot,posneg) %>% slice(1:15)
 
 wcb$Title <- reorder(factor(wcb$Title),wcb$ID)
 
