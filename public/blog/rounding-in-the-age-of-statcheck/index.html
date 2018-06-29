@@ -8,6 +8,7 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
+<meta name="author" content="Felix Thoemmes">
 <meta name="description" content="I recently chatted with a colleague whose work was flagged on PubPeer by the statcheck bot that has been scraping the web last year or so. Her reaction - which I believe is pretty typical - was mild annoyance. To her (and I believe many others) it felt a bit pedantic to be flagged what was essentially a rounding error. She feared that such a flag may create a false impression that the work is a “false positive”, and that people jump to conclusions when they see a statcheck error.">
 
 <meta property="og:title" content="Rounding in the age of statcheck" />
@@ -46,7 +47,7 @@
 
 
 
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
 
 
 
@@ -56,11 +57,11 @@
 
 
     
-    <link rel="stylesheet" href="https://felixthoemmes.github.io/css/reset.css?t=2018-06-29%2011%3a28%3a55.1623178%20-0400%20EDT%20m%3d%2b0.074169601">
-    <link rel="stylesheet" href="https://felixthoemmes.github.io/css/pygments.css?t=2018-06-29%2011%3a28%3a55.1623178%20-0400%20EDT%20m%3d%2b0.074169601">
-    <link rel="stylesheet" href="https://felixthoemmes.github.io/css/main.css?t=2018-06-29%2011%3a28%3a55.1623178%20-0400%20EDT%20m%3d%2b0.074169601">
+    <link rel="stylesheet" href="https://felixthoemmes.github.io/css/reset.css?t=2018-06-29%2015%3a43%3a51.5005436%20-0400%20EDT%20m%3d%2b0.085730401">
+    <link rel="stylesheet" href="https://felixthoemmes.github.io/css/pygments.css?t=2018-06-29%2015%3a43%3a51.5005436%20-0400%20EDT%20m%3d%2b0.085730401">
+    <link rel="stylesheet" href="https://felixthoemmes.github.io/css/main.css?t=2018-06-29%2015%3a43%3a51.5005436%20-0400%20EDT%20m%3d%2b0.085730401">
     
-        <link rel="stylesheet" href="https://felixthoemmes.github.io/css/override.css?t=2018-06-29%2011%3a28%3a55.1623178%20-0400%20EDT%20m%3d%2b0.074169601">
+        <link rel="stylesheet" href="https://felixthoemmes.github.io/css/override.css?t=2018-06-29%2015%3a43%3a51.5005436%20-0400%20EDT%20m%3d%2b0.085730401">
     
 
 
@@ -71,6 +72,10 @@
     href="https://felixthoemmes.github.io/img/favicon.ico"
 
 >
+
+
+
+
 
 
 
@@ -136,13 +141,22 @@
 <section class="icons">
     <div class="container">
         <div class="content">
-
         
             <a href="//github.com/felixthoemmes" target="_blank" rel="noopener"><img class="icon" src="https://felixthoemmes.github.io/img/github.svg" alt="github" /></a>
         
 
         
+
+        
             <a href="//twitter.com/felixthoemmes" target="_blank" rel="noopener"><img class="icon" src="https://felixthoemmes.github.io/img/twitter.svg" alt="twitter" /></a>
+        
+
+	
+
+        
+
+        
+
         
 
         
@@ -158,8 +172,7 @@
         
 
         
-            <a href="https://felixthoemmes.github.io/index.xml"><img class="icon" src="https://felixthoemmes.github.io/img/rss.svg" alt="rss" /></a>
-        
+
         
         </div>
     </div>
@@ -276,23 +289,15 @@ if (!doNotTrack) {
 
 
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
   
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/R.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/R.min.js"></script>
   
 
   <script type="text/javascript">
     hljs.initHighlightingOnLoad();
   </script>
 
-
-    
-    
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-    </script>
-    <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
-    
 
 
 
